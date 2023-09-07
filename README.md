@@ -7,12 +7,11 @@ Welcome to the Event Management System! This project aims to provide a platform 
 - [Features](#features)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
   - [Installation](#installation)
+  - [Setup](#setup)
 - [Usage](#usage)
 - [Project Scope](#project-scope)
   - [What's Included](#whats-included)
-  - [Docker Configuration](#docker-configuration)
   - [What's Not Included](#whats-not-included)
 
 ## Features
@@ -26,38 +25,23 @@ Welcome to the Event Management System! This project aims to provide a platform 
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- Docker and Docker Compose (optional, for containerized development)
-
-### Setup
-
-1. **Database Setup**: Start the database using Docker:
-
-   ```bash
-   docker-compose up -d --build
-   ```
+- Node.js (v16 or higher)
+- Docker and Docker Compose 
 
 ### Installation
 
-1. Clone this repository:
+ Clone this repository:
 
 ```bash
     https://github.com/shukuravazov/fullstack-event-management.git
 ```
 
-2. Backend Setup:
+### Setup
+
+ **Start the app**: Start the application using Docker:
 
    ```bash
-          cd server
-          npm install
-          npm start
-   ```
-
-3. Frontend Setup:
-   ```bash
-          cd client
-          npm install
-          npm run serve
+   docker-compose up --build
    ```
 
 Once the application is set up and running, you can access the following:
@@ -96,13 +80,9 @@ The project includes a Vue.js frontend and a NestJS backend connected to a Postg
 - Docker configuration for easy development setup.
 - Unit tests for some frontend components.
 
-### Docker Configuration
-
-While the project includes Docker, it's important to note that the Docker setup is not as described in the initial requirements. The provided Docker setup is focused on individual components rather than starting the entire project. You can find Dockerfiles in the respective directories of the backend and frontend. To run the project using Docker, you may need to adjust the Docker setup to match your requirements.
 
 ### What's Not Included
 
-- Docker configuration to start the whole project.
 - Unit tests and extensive testing suites.
 - Comprehensive data validation and error handling. There is no implementation of validations and error handlers in both the backend and frontend.
 - Comprehensive testing suites. While the project does include unit tests for specific frontend components, comprehensive testing coverage for all features is not present.
