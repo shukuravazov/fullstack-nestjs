@@ -26,23 +26,23 @@ Welcome to the Event Management System! This project aims to provide a platform 
 ### Prerequisites
 
 - Node.js (v16 or higher)
-- Docker and Docker Compose 
+- Docker and Docker Compose
 
 ### Installation
 
- Clone this repository:
+Clone this repository:
 
 ```bash
-    https://github.com/shukuravazov/fullstack-event-management.git
+https://github.com/shukuravazov/fullstack-nestjs.git
 ```
 
 ### Setup
 
- **Start the app**: Start the application using Docker:
+**Start the app**: Start the application using Docker:
 
-   ```bash
-   docker-compose up --build
-   ```
+```bash
+docker-compose up --build
+```
 
 Once the application is set up and running, you can access the following:
 
@@ -79,7 +79,6 @@ The project includes a Vue.js frontend and a NestJS backend connected to a Postg
 - Frontend interface for user interaction and management of events and locations.
 - Docker configuration for easy development setup.
 - Unit tests for some frontend components.
-
 
 ### What's Not Included
 
